@@ -12,7 +12,7 @@ Note: A version of the report in this repo is available to view online [here](ht
 To recreate this solution in your environment:
 * Provision a Power BI Workspace - and assign the workspace to a capacity with Fabric capabilities.
 * Create a Lakehouse in the workspace.
-* Create a Dataflow Gen2 to load the two tables in the Excel workbook (LocationEgV2.xlsx) to Lakehouse Delta Tables (see screenshot below).  Tip: In Dataflow Gen2, you can upload an Excel file while defining the flow.
+* Create a Dataflow Gen2 to load the two tables in the Excel workbook (LocationEgV2.xlsx) to Lakehouse Delta Tables (see screenshot below).  Tip: In Dataflow Gen2, you can upload an Excel file while defining the flow.  The Excel tables are already transformed with appropriate data types; you just need to add the Lakehouse as a destination.
 * Use the included notebook in this repo to generate the 3rd Delta Table (i.e. ServiceTechLocationDistance) to store the distance calculations.
 * Open the sample notebook in this repo (LocationEg_V2.pbix); modify the Parameters DBServer and DBName to match your lakehouse SQL Connection properties, and then click the Refresh button.
 * Optional - deploy LocationEg_V2.pbix to the workspace.
